@@ -154,11 +154,11 @@ print("\nInfos:")
 hund.info()
 katze.info()
 maus.info()
-chinchilla.info()
+chinchilla.info() """
 
 
 #Nein, Sie müssen die Methode geraeusch_machen() beim Chinchilla nicht überschreiben, wenn Sie möchten, dass
-# es das Geräusch der Basisklasse Tier ausgibt. """ 
+# es das Geräusch der Basisklasse Tier ausgibt. 
 
 
 
@@ -213,8 +213,8 @@ mitarbeiter = Mitarbeiter("Alice", 3000)
 mitarbeiter.arbeiten()
 
 manager = Manager("Bob", 5000, 5)
-manager.arbeiten()
- """
+manager.arbeiten() """
+
 
 
 
@@ -237,8 +237,7 @@ manager.arbeiten()
 
 
 
-""" 
- # Klassen Läufer und Schwimmer
+
 class Läufer:
     def laufen(self):
         print("Ich kann laufen.")
@@ -246,14 +245,12 @@ class Läufer:
 class Schwimmer:
     def schwimmen(self):
         print("Ich kann schwimmen.")
-# Klasse Triathlet, die von beiden erbt
-class Triathlet(Läufer, Schwimmer):
-    pass
 
-# Test
-triathlet = Triathlet()
-triathlet.laufen()
-triathlet.schwimmen() """
+class Triathlet(Läufer, Schwimmer):
+    def faehigkeiten(self):
+        self.laufen()
+        self.schwimmen()
+        print("Und ich kann auch Fahrrad fahren")
 
 
 
@@ -393,4 +390,5 @@ sparkonto.zinsen_hinzufügen()
 
 girokonto = Girokonto("54321", 500, 300)
 girokonto.auszahlen(600)
-girokonto.auszahlen(300) """
+girokonto.auszahlen(300)
+ """

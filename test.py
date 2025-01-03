@@ -1,41 +1,15 @@
-namens_liste = [
-    "Oliver",
-    "Suzanna",
-    [
-        "Mikro",
-        "Steffi",
-        "Andreas",
-    ],
-    "Elke",
-    "Maik",
-    "Jacques",
-    ]
+class Animal():
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
 
-zahlen_liste = [
-    "This is a test",
-    1,
-    2,
-    3,
-    ["Serhat",
-    "ist",
-    "Hacker"
-    ],
-    4,
-    5
-]
 
-nummern_liste = [
-    [
-        27,
-        99,
-        100,
-    ],
-    1.5,
-       
-       
-    2.555,
-    3.5,
-    4.3,
-    2.7,]
-print(nummern_liste[2])
+class Dog(Animal):
+    pass
+"""     def __init__(self, name, age):
+        super().__init__(name, age) """
 
+
+
+mydog = Dog("Woofy",3)
+print(mydog.name)
