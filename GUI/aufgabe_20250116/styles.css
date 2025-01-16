@@ -34,3 +34,31 @@
     background-color: #007914;
     color: white;
 }
+
+
+
+/* Aufgabe 3: Section with 3 Rows of Images and Text */
+#aufgabe3 {
+    margin: 20px;
+}
+
+.section-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.row {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 0;
+    border:#007914;
+}
+
+
+.row-reverse {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 0;
+}
