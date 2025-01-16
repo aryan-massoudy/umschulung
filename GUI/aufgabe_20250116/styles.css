@@ -1,0 +1,36 @@
+/* Aufgabe 1: Button with Hover Animation */
+#aufgabe1 button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#aufgabe1 button:hover {
+    background-color: #007914;
+}
+
+
+/* Aufgabe 2: Link with Border and Ubuntu Font */
+
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+
+#aufgabe2 a {
+    font-family: 'Ubuntu-Regular';
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    transition: all 1s ease;
+}
+
+#aufgabe2 a:hover {
+    background-color: #007914;
+    color: white;
+}
