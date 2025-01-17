@@ -1,8 +1,11 @@
+
+
+
 /* Aufgabe 1: Button with Hover Animation */
 #aufgabe1 button {
     padding: 10px 20px;
     background-color: #4CAF50;
-    color: white;
+    color: rgb(255, 249, 249);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -38,27 +41,71 @@
 
 
 /* Aufgabe 3: Section with 3 Rows of Images and Text */
-#aufgabe3 {
-    margin: 20px;
-}
+
 
 .section-container {
     max-width: 1300px;
     margin: 0 auto;
 }
 
-.row {
+.row1 {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    background-color: #000000; 
+}
+.row1 div {
+    color: yellow; 
+  }
+
+
+.row2 {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    background-color: #ff0000; 
+ 
+
+}
+
+.row3 {
     display:flex;
     justify-content:space-between;
     align-items: center;
     margin: 20px 0;
     border:#007914;
+    border: 1px solid #ccc;
+    background-color: #007914; 
+
 }
 
 
-.row-reverse {
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    margin: 20px 0;
+/* Aufgabe 4: Link that Redirects to Knastseite */
+#aufgabe4 a {
+    background-color: #4CAF50;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
+
+#aufgabe4 a:hover {
+    background-color: #45a049;
+}
+
+
+
+/* style.css
+
+.row1, .row2, .row3 {
+    border: 1px solid #ccc; 
+    padding: 10px;
+    margin-bottom: 10px;
+  } */
+
+
