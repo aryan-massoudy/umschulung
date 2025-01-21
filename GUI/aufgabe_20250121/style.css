@@ -1,0 +1,85 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark gray text */
+  display: flex;
+  height: 100vh;
+}
+
+/* Main container to hold the sidebar and content */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar style */
+.sidebar {
+  background-image: linear-gradient(to bottom, #004902, #388E3C); /* Green gradient */
+  width: 220px;
+  padding: 20px;
+  height: 100vh; /* Full height */
+}
+
+.sidebar ul {
+  list-style-type: none; /* No bullet points */
+}
+
+.sidebar ul li {
+  margin: 20px 0; /* Space between each link */
+}
+
+.sidebar ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 15px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #0b470e; /* Darker green when hovered */
+}
+
+/* Main content area style */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #333; /* Dark gray for header */
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 20px;
+  padding: 30px;
+  width: 30%; /* Three cards in a row */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #4CAF50; /* Green color for headings */
+}
+
+.card p {
+  font-size: 16px;
+  color: #666; /* Gray text for description */
+}
