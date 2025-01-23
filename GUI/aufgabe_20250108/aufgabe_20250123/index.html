@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        .box{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color:lightgrey;
+            width:300px;
+            height:100px;
+        }
+ 
+        .textfield{
+            margin-top:3rem;
+        }
+ 
+        button{
+            font-size:1.5rem;
+            padding:1rem 2rem;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div id="text-box" class="box"></div>
+    <input id="eingabe-feld" class="textfield" type="text">
+    <button onclick="changeText()">Text ändern</button>
+ 
+ 
+    <script>
+ 
+        function changeText(){
+            let box = document.getElementById('text-box');
+            let eingabeFeld = document.getElementById('eingabe-feld').value;
+            box.innerHTML = eingabeFeld;
+            console.log(eingabeFeld);
+        }
+    </script>
+</body>
+</html>
