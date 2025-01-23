@@ -17,6 +17,7 @@ body {
 /* Main container to hold the sidebar and content */
 .container {
   display: flex;
+  flex-wrap: wrap; /* Allow content to wrap */
   width: 100%;
 }
 
@@ -27,6 +28,32 @@ body {
   padding: 20px;
   height: 100vh; /* Full height */
 }
+
+/* ... rest of the sidebar styles ... */
+
+/* Main content area style */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* ... rest of the main content styles ... */
+
+.cards {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 20px;
+  padding: 30px;
+  width: calc(33.33% - 20px); /* Adjust width for spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+
 
 .sidebar ul {
   list-style-type: none; /* No bullet points */
@@ -48,38 +75,27 @@ body {
   background-color: #0b470e; /* Darker green when hovered */
 }
 
-/* Main content area style */
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
+
+/* ... rest of the card styles ... */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
-header h1 {
-  font-size: 38px;
-  margin-bottom: 20px;
-  color: #333; /* Dark gray for header */
-}
+@media (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
 
-.cards {
-  display: flex;
-  gap: 30px;
-}
-
-.card {
-  background-color: #fff; /* White background for cards */
-  border-radius: 20px;
-  padding: 30px;
-  width: 30%; /* Three cards in a row */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #4CAF50; /* Green color for headings */
-}
-
-.card p {
-  font-size: 16px;
-  color: #666; /* Gray text for description */
+  .main-content {
+    padding: 10px;
+  }
 }
